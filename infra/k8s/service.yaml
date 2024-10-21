@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: novostack-crm-coll-0d0b4412a2be417285ef670f342df0ca-srv
+spec:
+  selector:
+    app: novostack-crm-coll-0d0b4412a2be417285ef670f342df0ca
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9011
+  type: LoadBalancer
